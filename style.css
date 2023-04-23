@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.sizing {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #131313;
+    font-size: 40px;
+    border-left: 5px solid #FF900E;
+    padding-left: 5px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #727272;
+    line-height: 24px;
+
+}
+
+button {
+    padding: 18px 22px;
+    border: none;
+    background-color: #FF900E;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* ------------
+Nav Bar Styles
+--------------- */
+
+nav {
+    background: rgba(255, 144, 14, 0.1);
+}
+
+nav>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+nav h2 {
+    font-size: 32px;
+}
+
+.menu-item ul {
+    display: flex;
+    gap: 50px;
+}
+
+.menu-item ul li {
+    list-style: none;
+}
+
+.menu-item ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #424242;
+}
+
+/* ------------------
+Header Section Styles
+--------------------- */
+
+header {
+    background: rgba(255, 144, 14, 0.1);
+    padding-top: 100px;
+    padding-bottom: 45px;
+}
+
+.intro {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.intro h1 {
+    font-size: 50px;
+    color: #131313;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* ------------------
+Features Section Styles
+--------------------- */
+
+section.features {
+    display: flex;
+    gap: 70px;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+.four-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.four-img img {
+    width: 280px;
+}
+
+.feature-info {
+    margin: auto 0;
+}
+.feature-info h2 {
+    border-left: 5px solid #FF900E;
+    padding-left: 15px;
+}
+
+.feature-info span:nth-child(1) {
+    font-weight: 400;
+    color: #727272;
+}
+
+.feature-info  span:nth-child(2) {
+    padding-left: 10px;
+    color: #FF900E;
+   
+}
+
+.feature-info p {
+    margin-top: 20px;
+}
+
+/* ---------------------
+Service Section Styles
+------------------------ */
+
+.our-service {
+    display: flex;
+    gap: 100px;
+}
+
+.service-items {
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+}
+
+.service-intro h2 {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.service-items .item {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 28px;
+}
+
+.service-img img {
+    width: 37em;
+}
+
+.years {
+    text-align: center;
+    background-color: #FF900E;
+    width: 153px;
+    padding: 35px;
+    border-radius: 8px;
+    position: relative;
+    left: -60px;
+    top: -74px;
+}
+
+.years h2 {
+    color: #ffffff;
+}
+
+.years p {
+    color: #ffffff;
+}
+
+/* ---------------------
+Facts Section Styles
+------------------------ */
+
+section.facts-section {
+    margin-top: 80px;
+    margin-bottom: 130px;
+}
+
+.facts-intro h2 {
+    margin-bottom: 20px;
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+}
+
+.facts-items {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+}
+
+.f-item {
+    text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 160px;
+    height: 160px;
+    transition: 0.4s;
+}
+
+.fix {
+    margin: 16% 0;
+}
+
+.f-item h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.f-item:hover {
+    background: #fff4e6;
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 11%);
+    margin-top: -8px;
+}
+
+/* -----------------------
+Sponsors Section Styles
+-------------------------- */
+
+section.sponsors {
+    margin-bottom: 100px;
+}
+
+.sponsors-intro h2 {
+    margin-bottom: 20px;
+}
+
+.company {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponsors-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.company img {
+    /* filter: grayscale(100%); */
+    width: 135px;
+    height: 45px;
+}
+
+/* ------------------
+CTA Section Design
+--------------------- */
+
+.subscribe {
+    margin-top: 40px;
+}
+
+section.cta-section {
+    background-color: #FFF4E6;
+    border-radius: 8px;
+    text-align: center;
+    padding: 140px 0;
+    margin-bottom: 100px;
+}
+
+.subscribe input[type=email] {
+    padding: 18px 22px;
+    border: none;
+    outline: none;
+    margin: -5px;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.subscribe input[type=button] {
+    border: none;
+    padding: 18px 22px;
+    background-color: #FF900E;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 0px 6px 6px 0px;
+    cursor: pointer;
+}
+
+/* ------------------
+Footer Style
+--------------------- */
+
+footer {
+    background-color: #FFF4E7;
+    border-radius: 6px;
+}
+
+.footer-style {
+    padding: 35px 0;
+    text-align: center;
+    color: #424242;
+    margin-bottom: 100px;
+}
+
+.footer-style h4 {
+    font-weight: 400;
+}
+
+/* -------------------
+Medium Device Style
+---------------------- */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+    .sizing {
+        width: 90%;
+    }
+
+    .four-img img, .service-img img, .intro {
+        width: 100%;
+    }
+
+    section.features, .our-service {
+        flex-direction: column;
+    }
+
+    .facts-items {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .service-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .company {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: space-around;
+    }
+
+    .years {
+        width: 153px;
+        padding: 35px;
+        left: 0;
+        top: -75px;
+        margin: 0 auto;
+        border-radius: 6px;
+    }
+}
+
+/* ----------------------
+Mobile Responsive Styles
+------------------------- */
+
+@media screen and (max-width: 576px) {
+
+    .sizing {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    section.features, .our-service {
+        flex-direction: column;
+    }
+
+    .four-img img, .service-img img {
+        width: 100%;
+    }
+
+    /* Nav bar styles */
+
+    nav h2 {
+        font-size: 24px;
+    }
+
+    .menu-item ul {
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    /* Header Section */
+    header {
+        padding-top: 50px;
+    }
+    
+    .intro{
+        width: 100%;
+    }
+
+    .intro h1 {
+        font-size: 45px;
+    }
+
+    /* Features Section */
+
+    .four-img {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+
+    /* Service Section */
+
+    .years {
+        width: 100%;
+        padding: 35px 0;
+        left: 0;
+        top: 0;
+        border-radius: 6px;
+    }
+
+    /* Facts-item Section */
+
+    .facts-items {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* Sponsors Section */
+
+    .company {
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+
+    /* CTA Section */
+
+    section.cta-section {
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+}
